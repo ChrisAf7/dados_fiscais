@@ -31,6 +31,7 @@ class SiconfiClient:
         timeout_seconds: int = 30,
         max_retries: int = 3,
         retry_delay: float = 2.0,
+        request_delay: float = 1.0,
     ):
         self.max_concurrent = max_concurrent
         self.timeout = ClientTimeout(total=timeout_seconds)

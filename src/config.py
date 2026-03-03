@@ -7,6 +7,7 @@ class PipelineConfig:
     timeout_seconds: int = 30
     max_retries: int = 3
     retry_delay: float = 2.0
+    request_delay: float = 1.0
     output_dir: str = "outputs"
     salvar_csv: bool = True
     salvar_parquet: bool = True
